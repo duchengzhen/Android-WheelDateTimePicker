@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="45dp">
+
+	<calv1n.datetime.dependency.SegmentedGroup
+		android:id="@+id/segmented_group"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+	    android:layout_gravity="center_vertical"
+		>
+
+		<RadioButton
+			android:id="@+id/radio_gregorian"
+			style="@style/RadioButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="公历"/>
+
+		<RadioButton
+			android:id="@+id/radio_lunar"
+			style="@style/RadioButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="农历"/>
+
+
+	</calv1n.datetime.dependency.SegmentedGroup>
+
+	<CheckBox
+		android:id="@+id/box_ishow_year"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_vertical|right"
+		android:layout_marginRight="20dp"
+		android:button="@drawable/btn_checkbox"
+		android:text="忽略年份"
+		android:textColor="@android:color/white"/>
+</FrameLayout>

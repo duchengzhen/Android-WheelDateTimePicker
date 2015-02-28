@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="DatePickerView">
+		<attr name="wheel_background" format="reference"/>
+		<attr name="wheel_foreground" format="reference"/>
+		<attr name="wheel_number" format="integer"/>
+		<attr name="default_date" format="string|reference"/>
+		<attr name="primary_textColor" format="color|reference"/>
+		<attr name="minor_textColor" format="color|reference"/>
+		<attr name="year" format="integer"/>
+		<attr name="monthOfYear" format="integer"/>
+		<attr name="dayOfMonth" format="integer"/>
+	</declare-styleable>
+
+	<declare-styleable name="TimePickerView">
+		<attr name="hour" format="integer"/>
+		<attr name="minute" format="integer"/>
+		<attr name="time_style" format="enum">
+			<enum name="hour_12" value="0"/>
+			<enum name="hour_24" value="1"/>
+		</attr>
+	</declare-styleable>
+</resources>

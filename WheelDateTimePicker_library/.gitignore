@@ -1,10 +1,7 @@
-/.idea/workspace.xml
-/.idea/libraries
-*.iml
-.DS_Store
 # Built application files
 *.apk
 *.ap_
+*.iml
 
 # Files for the Dalvik VM
 *.dex
@@ -30,4 +27,3 @@ proguard/
 *.log
 
 .idea/
-

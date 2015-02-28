@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	android:id="@+id/vg_date"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_centerInParent="true"
+	android:layout_marginLeft="16dp"
+	android:layout_marginRight="16dp"
+	android:orientation="vertical"
+	>
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="45dp">
+
+		<calv1n.datetime.dependency.SegmentedGroup
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			>
+
+			<RadioButton
+				android:id="@+id/button21"
+				style="@style/RadioButton"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="公历"/>
+
+			<RadioButton
+				android:id="@+id/button22"
+				style="@style/RadioButton"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="农历"/>
+
+
+		</calv1n.datetime.dependency.SegmentedGroup>
+
+		<CheckBox
+			android:id="@+id/cbox_ishow_year"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical|right"
+			android:layout_marginRight="20dp"
+			android:button="@drawable/btn_checkbox"
+			android:text="忽略年份"
+			android:textColor="@android:color/white"/>
+	</FrameLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:layout_marginTop="2dp"
+		android:background="@android:color/white"
+		/>
+
+	<com.yuntixing.app.ui.picker.DatePickerView
+		android:id="@+id/dpv"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="4dp"
+		app:dayOfMonth="1"
+		app:monthOfYear="1"
+		app:year="1970"
+		/>
+
+</LinearLayout>
